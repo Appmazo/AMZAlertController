@@ -1,0 +1,27 @@
+PODS:
+  - AlertController (1.0.0):
+    - AppmazoUIKit (~> 1.0.1)
+  - AppmazoFoundation (1.0.1)
+  - AppmazoUIKit (1.0.3):
+    - AppmazoFoundation (~> 1.0.1)
+
+DEPENDENCIES:
+  - AlertController (from `../`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - AppmazoFoundation
+    - AppmazoUIKit
+
+EXTERNAL SOURCES:
+  AlertController:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  AlertController: 6310399fe21a84f804b74c218173144d40e323cd
+  AppmazoFoundation: 2b66a952d7a3a00ea77358ebc7171a8355002ecf
+  AppmazoUIKit: fb4e8135572e347ec1155c856b91e915ffd3b38b
+
+PODFILE CHECKSUM: a2615ad8f20e1da2dc7e22ac778db8cb4f852195
+
+COCOAPODS: 1.5.3
