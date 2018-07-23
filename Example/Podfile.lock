@@ -1,6 +1,6 @@
 PODS:
   - AlertController (1.0.0):
-    - AppmazoUIKit (~> 1.0.1)
+    - AppmazoUIKit (~> 1.0.3)
   - AppmazoFoundation (1.0.1)
   - AppmazoUIKit (1.0.3):
     - AppmazoFoundation (~> 1.0.1)
@@ -18,7 +18,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  AlertController: 6310399fe21a84f804b74c218173144d40e323cd
+  AlertController: 74e9238ed156ce352d23546ab7a5e84a8ae84068
   AppmazoFoundation: 2b66a952d7a3a00ea77358ebc7171a8355002ecf
   AppmazoUIKit: fb4e8135572e347ec1155c856b91e915ffd3b38b
 

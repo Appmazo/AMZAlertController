@@ -23,7 +23,7 @@
   "source_files": "AlertController/Classes/**/*.*",
   "dependencies": {
     "AppmazoUIKit": [
-      "~> 1.0.1"
+      "~> 1.0.3"
     ]
   }
 }
