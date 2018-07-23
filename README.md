@@ -37,9 +37,9 @@ it, simply add the following line to your Podfile:
 pod 'AlertController'
 ```
 
-#Usage
+# Usage
 
-###Basic alert
+### Basic alert
 
 ```swift
 let alertController = AlertController.alertControllerWithTitle("Hello, World!", message: "This Is An Alert Controller!")
@@ -48,7 +48,7 @@ alertController.addAction(alertAction)
 present(alertController, animated: true, completion: nil)
 ```
 
-###Add multiple actions
+### Add multiple actions
 
 ```swift
 let okAction = AlertAction(withTitle: "OK", style: .filled, handler: nil)
@@ -57,7 +57,7 @@ let dismissAction = AlertAction(withTitle: "Dismiss", style: .default, handler: 
 alertController.addActions([okAction, maybeAction, dismissAction])
 ```
 
-###Implement action handlers
+### Implement action handlers
 
 ```swift
 let handlerAlertAction = AlertAction(withTitle: "Do Something", style: .filled, handler: { (alertAction) in
@@ -65,7 +65,7 @@ let handlerAlertAction = AlertAction(withTitle: "Do Something", style: .filled, 
 })
 ```
 
-###Background Styles
+### Background Styles
 
 ```swift
 .transparent: Displays a transparent background over the presenting view controller (default)
@@ -73,7 +73,7 @@ let handlerAlertAction = AlertAction(withTitle: "Do Something", style: .filled, 
 .blurred: Displays a blurred background over the presenting view controller.
 ```
 
-###Action Styles
+### Action Styles
 ```swift
 .default: Displays a text based button (default)
 .filled: Displays a color filled button.
