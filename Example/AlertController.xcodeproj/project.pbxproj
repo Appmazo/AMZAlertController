@@ -259,13 +259,13 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-AlertController_Example/Pods-AlertController_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/AlertController/AlertController.framework",
+				"${BUILT_PRODUCTS_DIR}/AMZAlertController/AMZAlertController.framework",
 				"${BUILT_PRODUCTS_DIR}/AppmazoFoundation/AppmazoFoundation.framework",
 				"${BUILT_PRODUCTS_DIR}/AppmazoUIKit/AppmazoUIKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlertController.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AMZAlertController.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AppmazoFoundation.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AppmazoUIKit.framework",
 			);

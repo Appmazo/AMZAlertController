@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double AlertControllerVersionNumber;
-FOUNDATION_EXPORT const unsigned char AlertControllerVersionString[];
+FOUNDATION_EXPORT double AMZAlertControllerVersionNumber;
+FOUNDATION_EXPORT const unsigned char AMZAlertControllerVersionString[];
 

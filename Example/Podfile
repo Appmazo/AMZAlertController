@@ -2,7 +2,7 @@ platform :ios, '11.0'
 use_frameworks!
 
 target 'AlertController_Example' do
-  pod 'AlertController', :path => '../'
+  pod 'AMZAlertController', :path => '../'
 #  pod 'AppmazoFoundation', :path => '../../AppmazoFoundation'
 #  pod 'AppmazoUIKit', :path => '../../AppmazoUIKit'
 
