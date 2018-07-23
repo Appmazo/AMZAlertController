@@ -7,7 +7,7 @@
 #
 
 Pod::Spec.new do |s|
-    s.name             = 'AlertController'
+    s.name             = 'AMZAlertController'
     s.version          = '1.0.0'
     s.summary          = 'A simple and modern alert controller.'
     s.swift_version    = '4.1'

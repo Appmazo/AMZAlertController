@@ -1,0 +1,6 @@
+framework module AMZAlertController {
+  umbrella header "AMZAlertController-umbrella.h"
+
+  export *
+  module * { export * }
+}

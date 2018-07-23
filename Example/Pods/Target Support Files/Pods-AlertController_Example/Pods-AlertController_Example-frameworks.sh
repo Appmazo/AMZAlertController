@@ -143,12 +143,12 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_framework "${BUILT_PRODUCTS_DIR}/AlertController/AlertController.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/AMZAlertController/AMZAlertController.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/AppmazoFoundation/AppmazoFoundation.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/AppmazoUIKit/AppmazoUIKit.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_framework "${BUILT_PRODUCTS_DIR}/AlertController/AlertController.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/AMZAlertController/AMZAlertController.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/AppmazoFoundation/AppmazoFoundation.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/AppmazoUIKit/AppmazoUIKit.framework"
 fi
