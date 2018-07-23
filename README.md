@@ -9,7 +9,7 @@
 
 # Introduction
 
-AlertController is a simple and modern alert controller to is better than but familiar to UIAlertController.
+AlertController is a simple and modern alert controller which is better than but familiar to UIAlertController.
 
 ![Alert Controller Single Button](./Screenshots/single-button.png)
 ![Alert Controller Double Button with Image](./Screenshots/double-button-with-image.png)
