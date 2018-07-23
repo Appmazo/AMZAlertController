@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import AlertController
+import AMZAlertController
 import AppmazoUIKit
 
 class AlertControllerTableViewController: UITableViewController {
