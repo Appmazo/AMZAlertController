@@ -1,9 +1,9 @@
 # AlertController
 
 [![Build Status](https://travis-ci.com/Appmazo/AlertController.svg?style=flat)](https://travis-ci.com/Appmazo/AlertController)
-[![Version](https://img.shields.io/cocoapods/v/AlertController.svg?style=flat)](http://cocoapods.org/pods/AlertController.svg)
-[![License](https://img.shields.io/cocoapods/l/AlertController.svg?style=flat)](http://cocoapods.org/pods/AlertController.svg)
-[![Platform](https://img.shields.io/cocoapods/p/AlertController.svg?style=flat)](http://cocoapods.org/pods/AlertController.svg)
+[![Version](https://img.shields.io/cocoapods/v/AMZAlertController.svg?style=flat)](http://cocoapods.org/pods/AMZAlertController.svg)
+[![License](https://img.shields.io/cocoapods/l/AMZAlertController.svg?style=flat)](http://cocoapods.org/pods/AMZAlertController.svg)
+[![Platform](https://img.shields.io/cocoapods/p/AMZAlertController.svg?style=flat)](http://cocoapods.org/pods/AMZAlertController.svg)
 [![Beerpay](https://beerpay.io/Appmazo/AlertController/badge.svg)](https://beerpay.io/Appmazo/AlertController)
 [![Beerpay](https://beerpay.io/Appmazo/AlertController/make-wish.svg?style=flat-square)](https://beerpay.io/Appmazo/AlertController?focus=wish)
 
