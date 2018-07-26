@@ -3,10 +3,5 @@ use_frameworks!
 
 target 'AlertController_Example' do
   pod 'AMZAlertController', :path => '../'
-#  pod 'AppmazoFoundation', :path => '../../AppmazoFoundation'
-#  pod 'AppmazoUIKit', :path => '../../AppmazoUIKit'
-
-#  target 'AlertController_Tests' do
-#    inherit! :search_paths    
-#  end
+  pod 'AppmazoUIKit'
 end

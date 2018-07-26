@@ -1,6 +1,6 @@
 {
   "name": "AMZAlertController",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "summary": "A simple and modern alert controller.",
   "swift_version": "4.1",
   "description": "AlertController is a simple and modern alert controller to is better than but familiar to UIAlertController.",
@@ -14,7 +14,7 @@
   },
   "source": {
     "git": "https://github.com/Appmazo/AlertController.git",
-    "tag": "1.0.0"
+    "tag": "1.0.2"
   },
   "social_media_url": "https://twitter.com/appmazo",
   "platforms": {
@@ -23,7 +23,7 @@
   "source_files": "AlertController/Classes/**/*.*",
   "dependencies": {
     "AppmazoUIKit": [
-      "~> 1.0.3"
+      "~> 1.0.4"
     ]
   }
 }

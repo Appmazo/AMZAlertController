@@ -52,7 +52,7 @@ public class AlertAction: Button {
         - handler: The handler for the action's click behavior.
      - returns: A new instance of an AlertAction.
      */
-    class func actionWithTitle(_ title: String, style: AlertAction.Style, handler: ((AlertAction) -> Void)?) -> AlertAction {
+    public class func actionWithTitle(_ title: String, style: AlertAction.Style, handler: ((AlertAction) -> Void)?) -> AlertAction {
         return AlertAction(withTitle: title, style: style, handler: handler)
     }
     

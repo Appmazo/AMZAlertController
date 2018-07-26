@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
     s.name             = 'AMZAlertController'
-    s.version          = '1.0.1'
+    s.version          = '1.0.2'
     s.summary          = 'A simple and modern alert controller.'
     s.swift_version    = '4.1'
     
@@ -36,5 +36,5 @@ Pod::Spec.new do |s|
     
     # s.public_header_files = 'Pod/Classes/**/*.h'
     # s.frameworks = 'UIKit', 'MapKit'
-    s.dependency 'AppmazoUIKit', '~> 1.0.3'
+    s.dependency 'AppmazoUIKit', '~> 1.0.4'
 end

@@ -8,7 +8,6 @@
 
 import UIKit
 
-
 public class ModalTransitioning: NSObject {
     public enum BackgroundStyle {
         case clear
