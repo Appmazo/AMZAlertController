@@ -1,6 +1,0 @@
-framework module Pods_AlertController_Example {
-  umbrella header "Pods-AlertController_Example-umbrella.h"
-
-  export *
-  module * { export * }
-}

@@ -1,23 +1,23 @@
-# AlertController
+# AMZAlertController
 
-[![Build Status](https://travis-ci.com/Appmazo/AlertController.svg?style=flat)](https://travis-ci.com/Appmazo/AlertController)
+[![Build Status](https://travis-ci.com/Appmazo/AMZAlertController.svg?style=flat)](https://travis-ci.com/Appmazo/AMZAlertController)
 [![Version](https://img.shields.io/cocoapods/v/AMZAlertController.svg?style=flat)](http://cocoapods.org/pods/AMZAlertController.svg)
 [![License](https://img.shields.io/cocoapods/l/AMZAlertController.svg?style=flat)](http://cocoapods.org/pods/AMZAlertController.svg)
 [![Platform](https://img.shields.io/cocoapods/p/AMZAlertController.svg?style=flat)](http://cocoapods.org/pods/AMZAlertController.svg)
-[![Beerpay](https://beerpay.io/Appmazo/AlertController/badge.svg)](https://beerpay.io/Appmazo/AlertController)
-[![Beerpay](https://beerpay.io/Appmazo/AlertController/make-wish.svg?style=flat-square)](https://beerpay.io/Appmazo/AlertController?focus=wish)
+[![Beerpay](https://beerpay.io/Appmazo/AMZAlertController/badge.svg)](https://beerpay.io/Appmazo/AMZAlertController)
+[![Beerpay](https://beerpay.io/Appmazo/AMZAlertController/make-wish.svg?style=flat-square)](https://beerpay.io/Appmazo/AMZAlertController?focus=wish)
 
 # Introduction
 
-AlertController is a simple and modern alert controller which is better than but familiar to UIAlertController.
+AMZAlertController is a simple and modern alert controller which is better than but familiar to UIAlertController.
 
-![Alert Controller Single Button](./Screenshots/single-button.png)
-![Alert Controller Double Button with Image](./Screenshots/double-button-with-image.png)
-![Alert Controller Triple Button](./Screenshots/triple-button.png)
-![Alert Controller Blurred Background](./Screenshots/blurred-background.png)
-![Alert Controller Clear Background](./Screenshots/clear-background.png)
-![Alert Controller Clear Background with Shadow](./Screenshots/clear-background-with-shadow.png)
-![Alert Controller Custom View](./Screenshots/custom-view.png)
+![Single Button](./Screenshots/single-button.png)
+![Double Button with Image](./Screenshots/double-button-with-image.png)
+![Triple Button](./Screenshots/triple-button.png)
+![Blurred Background](./Screenshots/blurred-background.png)
+![Clear Background](./Screenshots/clear-background.png)
+![Clear Background with Shadow](./Screenshots/clear-background-with-shadow.png)
+![Custom View](./Screenshots/custom-view.png)
 
 
 ## Example
@@ -30,11 +30,11 @@ iOS 11.0+
 
 ## Installation
 
-AlertController is available through [CocoaPods](https://cocoapods.org). To install
+AMZAlertController is available through [CocoaPods](https://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'AlertController'
+pod 'AMZAlertController'
 ```
 
 # Usage
@@ -42,8 +42,8 @@ pod 'AlertController'
 ### Basic alert
 
 ```swift
-let alertController = AlertController.alertControllerWithTitle("Hello, World!", message: "This Is An Alert Controller!")
-let alertAction = AlertAction(withTitle: "Dismiss", style: .filled, handler: nil)
+let alertController = AMZAlertController.alertControllerWithTitle("Hello, World!", message: "This Is An Alert Controller!")
+let alertAction = AMZAlertAction(withTitle: "Dismiss", style: .filled, handler: nil)
 alertController.addAction(alertAction)
 present(alertController, animated: true, completion: nil)
 ```
@@ -86,7 +86,7 @@ Appmazo LLC, jhickman@appmazo.com
 
 ## License
 
-AlertController is available under the MIT license. See the LICENSE file for more info.
+AMZAlertController is available under the MIT license. See the LICENSE file for more info.
 
 ## Buy Me A Beer?
-[![Beerpay](https://beerpay.io/Appmazo/AlertController/badge.svg)](https://beerpay.io/Appmazo/AlertController)
+[![Beerpay](https://beerpay.io/Appmazo/AMZAlertController/badge.svg)](https://beerpay.io/Appmazo/AMZAlertController)
