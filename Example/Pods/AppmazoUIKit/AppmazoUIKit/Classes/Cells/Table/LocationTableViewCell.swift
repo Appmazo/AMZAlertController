@@ -10,7 +10,7 @@ import UIKit
 
 public protocol LocationTableViewCellDelegate: NSObjectProtocol {
     func locationTableViewCell(_ locationTableViewCell: LocationTableViewCell, locationButtonPressed locationButton: Button)
-    func locationTableViewCell(_ locationTableViewCell: LocationTableViewCell, locationTextUpdated locationText:String?)
+    func locationTableViewCell(_ locationTableViewCell: LocationTableViewCell, locationTextUpdated locationText: String?)
 }
 
 public class LocationTableViewCell: UITableViewCell {
@@ -21,17 +21,17 @@ public class LocationTableViewCell: UITableViewCell {
         case loading
     }
     
-    public static let reuseIdentifier = "LocationTableViewCellReuseIdentifier"
     public weak var delegate: LocationTableViewCellDelegate?
     
     private let textField = UITextField()
     private let primaryButton = Button(style: .normal)
     private let activtyIndicatorView = UIActivityIndicatorView(activityIndicatorStyle: UIActivityIndicatorViewStyle.gray)
+   
     private var editingConstraints: [NSLayoutConstraint]!
     private var loadingConstraints: [NSLayoutConstraint]!
     private var changeButtonConstraints: [NSLayoutConstraint]!
     private var updateLocationButtonConstraints: [NSLayoutConstraint]!
-    
+
     public var state: LocationTableViewCellState = .loading {
         didSet {
             updateState(state)
@@ -44,6 +44,12 @@ public class LocationTableViewCell: UITableViewCell {
         }
     }
     
+    public var changeButtonColor: UIColor = UIColor.black {
+        didSet {
+            primaryButton.setTitleColor(changeButtonColor, for: .normal)
+        }
+    }
+
     // MARK: - Init
     
     public required init?(coder aDecoder: NSCoder) {
@@ -62,15 +68,18 @@ public class LocationTableViewCell: UITableViewCell {
         textField.clearButtonMode = .whileEditing
         textField.autocorrectionType = .no
         textField.adjustsFontSizeToFitWidth = true
-        textField.setContentCompressionResistancePriority(UILayoutPriority.defaultLow, for: .horizontal)
+        textField.setContentHuggingPriority(.defaultHigh, for: .horizontal)
+        textField.setContentCompressionResistancePriority(.defaultLow, for: .horizontal)
         contentView.addSubview(textField)
         
         primaryButton.isHidden = true
         primaryButton.titleLabel?.textAlignment = .right
         primaryButton.imageView?.tintColor = UIColor.darkGray
         primaryButton.imageView?.contentMode = .scaleAspectFit
-        primaryButton.setTitleColor(UIColor.blue, for: .normal)
+        primaryButton.setTitleColor(changeButtonColor, for: .normal)
         primaryButton.addTarget(self, action: #selector(primaryButtonPressed(_:)), for: .touchUpInside)
+        primaryButton.setContentHuggingPriority(.defaultLow, for: .horizontal)
+        primaryButton.setContentCompressionResistancePriority(.defaultHigh, for: .horizontal)
         contentView.addSubview(primaryButton)
         
         activtyIndicatorView.hidesWhenStopped = true
@@ -85,8 +94,8 @@ public class LocationTableViewCell: UITableViewCell {
         
         editingConstraints = NSLayoutConstraint.constraints(withVisualFormat: "|-[textField]-|", options: [], metrics: nil, views: views)
         loadingConstraints = NSLayoutConstraint.constraints(withVisualFormat: "|-[activtyIndicatorView(30)]-[textField]-|", options: [.alignAllCenterY], metrics: nil, views: views)
-        changeButtonConstraints = NSLayoutConstraint.constraints(withVisualFormat: "|-[textField]-[primaryButton(80)]-16-|", options: [.alignAllCenterY], metrics: nil, views: views)
-        updateLocationButtonConstraints = NSLayoutConstraint.constraints(withVisualFormat: "|-[textField]-[primaryButton(25)]-16-|", options: [.alignAllCenterY], metrics: nil, views: views)
+        changeButtonConstraints = NSLayoutConstraint.constraints(withVisualFormat: "|-[textField]-[primaryButton(90)]-16-|", options: [.alignAllCenterY], metrics: nil, views: views)
+        updateLocationButtonConstraints = NSLayoutConstraint.constraints(withVisualFormat: "|-[textField]-[primaryButton(24)]-16-|", options: [.alignAllCenterY], metrics: nil, views: views)
         
         NSLayoutConstraint.activate(NSLayoutConstraint.constraints(withVisualFormat: "V:[activtyIndicatorView(30)]", options: [], metrics: nil, views: views))
         NSLayoutConstraint.activate(NSLayoutConstraint.constraints(withVisualFormat: "V:[primaryButton(25)]", options: [], metrics: nil, views: views))
@@ -114,10 +123,12 @@ public class LocationTableViewCell: UITableViewCell {
             showLocationButton()
             break
         case .customLocation:
-            addConstraints(changeButtonConstraints)
             if textField.text?.count == 0 {
+                addConstraints(editingConstraints)
+                hideChangeButton()
                 textField.isUserInteractionEnabled = true
             } else {
+                addConstraints(changeButtonConstraints)
                 textField.isUserInteractionEnabled = false
                 showChangeButton()
             }
@@ -126,7 +137,7 @@ public class LocationTableViewCell: UITableViewCell {
             primaryButton.isHidden = true
             addConstraints(editingConstraints)
             textField.isUserInteractionEnabled = true
-            startEditing()
+            textField.becomeFirstResponder()
             break
         case .loading:
             primaryButton.isHidden = true
@@ -155,18 +166,15 @@ public class LocationTableViewCell: UITableViewCell {
     private func showChangeButton() {
         primaryButton.setImage(nil, for: .normal)
         primaryButton.setTitle("Change", for: .normal)
+        primaryButton.sizeToFit()
         primaryButton.isHidden = false
     }
     
-    private func startEditing() {
-        textField.becomeFirstResponder()
+    private func hideChangeButton() {
+        primaryButton.isHidden = true
     }
     
-    private func stopEditing() {
-        textField.resignFirstResponder()
-    }
-    
-    @objc func primaryButtonPressed(_ sender: Button) {
+    @objc private func primaryButtonPressed(_ sender: Button) {
         switch state {
         case .customLocation:
             state = .editingLocation
@@ -192,6 +200,11 @@ extension LocationTableViewCell: UITextFieldDelegate {
     
     public func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.endEditing(true)
+        return true
+    }
+    
+    public func textFieldShouldClear(_ textField: UITextField) -> Bool {
+        delegate?.locationTableViewCell(self, locationTextUpdated: nil)
         return true
     }
 }

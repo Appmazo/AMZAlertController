@@ -1,8 +1,8 @@
 PODS:
-  - AMZAlertController (1.0.2):
+  - AMZAlertController (1.0.3):
     - AppmazoUIKit (~> 1.0.4)
   - AppmazoFoundation (1.0.1)
-  - AppmazoUIKit (1.0.4):
+  - AppmazoUIKit (1.0.6):
     - AppmazoFoundation (~> 1.0.1)
 
 DEPENDENCIES:
@@ -19,10 +19,10 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  AMZAlertController: 9445097eca6509d201a97faa0a8b7db0864d60e1
+  AMZAlertController: a48af9a10c207db4197fc3b9436d39d8f2c488d3
   AppmazoFoundation: 2b66a952d7a3a00ea77358ebc7171a8355002ecf
-  AppmazoUIKit: c5abc1a804590fbc0bcacbd5cd25272f1f503a33
+  AppmazoUIKit: 8a29e916ef1575fed28b16228e84dba8c75e6a89
 
-PODFILE CHECKSUM: 5e9e78e80341e26f361cfba0ea4920b106ddd63b
+PODFILE CHECKSUM: 5d4f259a4cdce5381bbceffb8c98e5293312c73d
 
 COCOAPODS: 1.5.3
