@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1AEDB73E210A55B000D0CC97 /* CustomAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEDB730210A55B000D0CC97 /* CustomAlertView.swift */; };
-		1AEDB73F210A55B000D0CC97 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AEDB732210A55B000D0CC97 /* LaunchScreen.storyboard */; };
-		1AEDB740210A55B000D0CC97 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1AEDB734210A55B000D0CC97 /* Images.xcassets */; };
-		1AEDB741210A55B000D0CC97 /* ExampleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEDB737210A55B000D0CC97 /* ExampleTableViewController.swift */; };
-		1AEDB742210A55B000D0CC97 /* ExampleTableViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AEDB738210A55B000D0CC97 /* ExampleTableViewController.storyboard */; };
-		1AEDB743210A55B000D0CC97 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEDB73A210A55B000D0CC97 /* AppDelegate.swift */; };
-		1AEDB744210A55B000D0CC97 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEDB73C210A55B000D0CC97 /* UIColor+Extensions.swift */; };
+		1A7193E9210A578F002251DD /* CustomAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7193DB210A578E002251DD /* CustomAlertView.swift */; };
+		1A7193EA210A578F002251DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A7193DD210A578E002251DD /* LaunchScreen.storyboard */; };
+		1A7193EB210A578F002251DD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A7193DF210A578E002251DD /* Images.xcassets */; };
+		1A7193EC210A578F002251DD /* ExampleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7193E2210A578E002251DD /* ExampleTableViewController.swift */; };
+		1A7193ED210A578F002251DD /* ExampleTableViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A7193E3210A578E002251DD /* ExampleTableViewController.storyboard */; };
+		1A7193EE210A578F002251DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7193E5210A578E002251DD /* AppDelegate.swift */; };
+		1A7193EF210A578F002251DD /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7193E7210A578F002251DD /* UIColor+Extensions.swift */; };
 		1FBA49E58C11102B87FEF850 /* Pods_AMZAlertController_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5EEE7C01B08E4D504299428 /* Pods_AMZAlertController_Example.framework */; };
 		9FFB8AD33D62B16C78744AE0 /* Pods_AlertController_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F1A086E494DA0C426DDFE51 /* Pods_AlertController_Example.framework */; };
 /* End PBXBuildFile section */
@@ -21,15 +21,15 @@
 /* Begin PBXFileReference section */
 		03E79F3817B962E8D972508F /* Pods-AMZAlertController_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AMZAlertController_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-AMZAlertController_Example/Pods-AMZAlertController_Example.release.xcconfig"; sourceTree = "<group>"; };
 		0E50E89AF2E1F395176F2AAE /* Pods-AlertController_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlertController_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-AlertController_Example/Pods-AlertController_Example.release.xcconfig"; sourceTree = "<group>"; };
+		1A7193D9210A578E002251DD /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1A7193DB210A578E002251DD /* CustomAlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomAlertView.swift; sourceTree = "<group>"; };
+		1A7193DD210A578E002251DD /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1A7193DF210A578E002251DD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		1A7193E2210A578E002251DD /* ExampleTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleTableViewController.swift; sourceTree = "<group>"; };
+		1A7193E3210A578E002251DD /* ExampleTableViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ExampleTableViewController.storyboard; sourceTree = "<group>"; };
+		1A7193E5210A578E002251DD /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1A7193E7210A578F002251DD /* UIColor+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
 		1ABC8D2921051EE600A956D3 /* AppmazoUIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AppmazoUIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1AEDB72E210A55B000D0CC97 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1AEDB730210A55B000D0CC97 /* CustomAlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomAlertView.swift; sourceTree = "<group>"; };
-		1AEDB732210A55B000D0CC97 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
-		1AEDB734210A55B000D0CC97 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		1AEDB737210A55B000D0CC97 /* ExampleTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleTableViewController.swift; sourceTree = "<group>"; };
-		1AEDB738210A55B000D0CC97 /* ExampleTableViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ExampleTableViewController.storyboard; sourceTree = "<group>"; };
-		1AEDB73A210A55B000D0CC97 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1AEDB73C210A55B000D0CC97 /* UIColor+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
 		23BBAEABE536A82641BD14FE /* Pods-AlertController_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlertController_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AlertController_Tests/Pods-AlertController_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		2C85629C64656DB43634A232 /* Pods-AMZAlertController_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AMZAlertController_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AMZAlertController_Example/Pods-AMZAlertController_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* AMZAlertController_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AMZAlertController_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -56,83 +56,96 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1AEDB72D210A55B000D0CC97 /* Supporting Files */ = {
+		1A7193D7210A5782002251DD /* Example */ = {
 			isa = PBXGroup;
 			children = (
-				1AEDB72E210A55B000D0CC97 /* Info.plist */,
+				1A7193DC210A578E002251DD /* Application */,
+				1A7193DE210A578E002251DD /* Assets */,
+				1A7193E0210A578E002251DD /* Controllers */,
+				1A7193E6210A578F002251DD /* Extensions */,
+				1A7193D8210A578E002251DD /* Supporting Files */,
+				1A7193DA210A578E002251DD /* Views */,
+			);
+			name = Example;
+			sourceTree = "<group>";
+		};
+		1A7193D8210A578E002251DD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1A7193D9210A578E002251DD /* Info.plist */,
 			);
 			name = "Supporting Files";
 			path = "AMZAlertController/Supporting Files";
-			sourceTree = SOURCE_ROOT;
+			sourceTree = "<group>";
 		};
-		1AEDB72F210A55B000D0CC97 /* Views */ = {
+		1A7193DA210A578E002251DD /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				1AEDB730210A55B000D0CC97 /* CustomAlertView.swift */,
+				1A7193DB210A578E002251DD /* CustomAlertView.swift */,
 			);
 			name = Views;
 			path = AMZAlertController/Views;
-			sourceTree = SOURCE_ROOT;
+			sourceTree = "<group>";
 		};
-		1AEDB731210A55B000D0CC97 /* Application */ = {
+		1A7193DC210A578E002251DD /* Application */ = {
 			isa = PBXGroup;
 			children = (
-				1AEDB732210A55B000D0CC97 /* LaunchScreen.storyboard */,
+				1A7193DD210A578E002251DD /* LaunchScreen.storyboard */,
 			);
 			name = Application;
 			path = AMZAlertController/Application;
-			sourceTree = SOURCE_ROOT;
+			sourceTree = "<group>";
 		};
-		1AEDB733210A55B000D0CC97 /* Assets */ = {
+		1A7193DE210A578E002251DD /* Assets */ = {
 			isa = PBXGroup;
 			children = (
-				1AEDB734210A55B000D0CC97 /* Images.xcassets */,
+				1A7193DF210A578E002251DD /* Images.xcassets */,
 			);
 			name = Assets;
 			path = AMZAlertController/Assets;
-			sourceTree = SOURCE_ROOT;
+			sourceTree = "<group>";
 		};
-		1AEDB735210A55B000D0CC97 /* Controllers */ = {
+		1A7193E0210A578E002251DD /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				1AEDB736210A55B000D0CC97 /* View Controllers */,
-				1AEDB739210A55B000D0CC97 /* Logic Controllers */,
+				1A7193E1210A578E002251DD /* View Controllers */,
+				1A7193E4210A578E002251DD /* Logic Controllers */,
 			);
 			name = Controllers;
 			path = AMZAlertController/Controllers;
-			sourceTree = SOURCE_ROOT;
+			sourceTree = "<group>";
 		};
-		1AEDB736210A55B000D0CC97 /* View Controllers */ = {
+		1A7193E1210A578E002251DD /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				1AEDB737210A55B000D0CC97 /* ExampleTableViewController.swift */,
-				1AEDB738210A55B000D0CC97 /* ExampleTableViewController.storyboard */,
+				1A7193E2210A578E002251DD /* ExampleTableViewController.swift */,
+				1A7193E3210A578E002251DD /* ExampleTableViewController.storyboard */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
 		};
-		1AEDB739210A55B000D0CC97 /* Logic Controllers */ = {
+		1A7193E4210A578E002251DD /* Logic Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				1AEDB73A210A55B000D0CC97 /* AppDelegate.swift */,
+				1A7193E5210A578E002251DD /* AppDelegate.swift */,
 			);
 			path = "Logic Controllers";
 			sourceTree = "<group>";
 		};
-		1AEDB73B210A55B000D0CC97 /* Extensions */ = {
+		1A7193E6210A578F002251DD /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				1AEDB73C210A55B000D0CC97 /* UIColor+Extensions.swift */,
+				1A7193E7210A578F002251DD /* UIColor+Extensions.swift */,
 			);
 			name = Extensions;
 			path = AMZAlertController/Extensions;
-			sourceTree = SOURCE_ROOT;
+			sourceTree = "<group>";
 		};
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
 				607FACF51AFB993E008FA782 /* Podspec Metadata */,
-				607FACD21AFB9204008FA782 /* Example for AlertController */,
+				1A7193D7210A5782002251DD /* Example */,
 				607FACD11AFB9204008FA782 /* Products */,
 				B8073ED5933551907D409485 /* Pods */,
 				F13397FBD7BBBF52E979847E /* Frameworks */,
@@ -145,20 +158,6 @@
 				607FACD01AFB9204008FA782 /* AMZAlertController_Example.app */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		607FACD21AFB9204008FA782 /* Example for AlertController */ = {
-			isa = PBXGroup;
-			children = (
-				1AEDB731210A55B000D0CC97 /* Application */,
-				1AEDB733210A55B000D0CC97 /* Assets */,
-				1AEDB735210A55B000D0CC97 /* Controllers */,
-				1AEDB73B210A55B000D0CC97 /* Extensions */,
-				1AEDB72D210A55B000D0CC97 /* Supporting Files */,
-				1AEDB72F210A55B000D0CC97 /* Views */,
-			);
-			name = "Example for AlertController";
-			path = AlertController;
 			sourceTree = "<group>";
 		};
 		607FACF51AFB993E008FA782 /* Podspec Metadata */ = {
@@ -257,9 +256,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1AEDB740210A55B000D0CC97 /* Images.xcassets in Resources */,
-				1AEDB73F210A55B000D0CC97 /* LaunchScreen.storyboard in Resources */,
-				1AEDB742210A55B000D0CC97 /* ExampleTableViewController.storyboard in Resources */,
+				1A7193EB210A578F002251DD /* Images.xcassets in Resources */,
+				1A7193EA210A578F002251DD /* LaunchScreen.storyboard in Resources */,
+				1A7193ED210A578F002251DD /* ExampleTableViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -313,10 +312,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1AEDB743210A55B000D0CC97 /* AppDelegate.swift in Sources */,
-				1AEDB741210A55B000D0CC97 /* ExampleTableViewController.swift in Sources */,
-				1AEDB73E210A55B000D0CC97 /* CustomAlertView.swift in Sources */,
-				1AEDB744210A55B000D0CC97 /* UIColor+Extensions.swift in Sources */,
+				1A7193EE210A578F002251DD /* AppDelegate.swift in Sources */,
+				1A7193EC210A578F002251DD /* ExampleTableViewController.swift in Sources */,
+				1A7193E9210A578F002251DD /* CustomAlertView.swift in Sources */,
+				1A7193EF210A578F002251DD /* UIColor+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
