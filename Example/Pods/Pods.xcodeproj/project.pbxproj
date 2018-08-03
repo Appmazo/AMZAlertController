@@ -11,6 +11,8 @@
 		09FC63F33CCB534F1BFEE55170C65DB7 /* SubtitleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05676591B8E646024F3536C4C3DE9EB8 /* SubtitleTableViewCell.swift */; };
 		0E00F6CC5DB5EEB642FF82A84DE838A6 /* AppmazoUIKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AF6A9AD851377EECE9BF771D778D32EF /* AppmazoUIKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0ED57EB4E726DF93D164826A7A72C65B /* AppmazoUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDFFD137F25D07A0594E7B09F81E0BDD /* AppmazoUIKit.framework */; };
+		1AE21F88210C1BB50055F435 /* AMZAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AE21F85210C1BB50055F435 /* AMZAlertController.swift */; };
+		1AE21F89210C1BB50055F435 /* AMZAlertAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AE21F87210C1BB50055F435 /* AMZAlertAction.swift */; };
 		27179D87B713B4137147E604A9A1271C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAE83EF593605EE7258C459492B616FE /* Foundation.framework */; };
 		2C364389148D659D3BA4E5CEB71855CE /* DatePickerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF8D740E475973A34FA789BAB2ED9FA /* DatePickerTableViewCell.swift */; };
 		32655042DB0058A45C5D27E1640DF0E7 /* PermissionPromptTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25795BFD3D1FD2C7FD944055D64302C /* PermissionPromptTableViewCell.swift */; };
@@ -26,14 +28,12 @@
 		5812DDE60F5B8BB2F4C963674ABA03E7 /* Pods-AMZAlertController_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E3D2F863DBE066ADA83CBF3E2F33986F /* Pods-AMZAlertController_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5C52EE6AC29A23512BAF40613CC11692 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAE83EF593605EE7258C459492B616FE /* Foundation.framework */; };
 		5FA02E334596EC789E19C5C44CF3DE7D /* AMZAlertController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A480120DF73B74BFAA192C01B1B1E248 /* AMZAlertController-dummy.m */; };
-		652A53B7E98359A2164B0E63D426C04B /* AMZAlertAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = C62A21CDB628A01749C431DF4560517C /* AMZAlertAction.swift */; };
 		70601CC408D7CF522C52995F41FDDF46 /* KeychainPasswordItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31AFE76ED8DB490685D84ED513CE2B86 /* KeychainPasswordItem.swift */; };
 		7F0BA36EF98DA7729F364CF2FADDFBAA /* AppmazoUIKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F9E5528CD52663899B3272A80219BE42 /* AppmazoUIKit-dummy.m */; };
 		9AC93910FFD5FDB1FE9D4E0766F340E0 /* TextFormFieldTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66109C5D49430CAD290378CC873F3508 /* TextFormFieldTableViewCell.swift */; };
 		9B7253BF5116202403194A0ABEE05694 /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C300048A7E9B6EE5C6468A4F23862DDE /* Date+Extensions.swift */; };
 		9BAADAD7FFE76E0415FC1BD739DDFDF4 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB635D35A9387228E26C1AF5C8034143 /* String+Extensions.swift */; };
 		ABF48D2BFA6C03963B3A31F2EA0DA7EC /* ReuseIdentifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85CD70BC9970E0D146F1EFADEAE75EB1 /* ReuseIdentifiable.swift */; };
-		AD1EA455ACA9F5EFD60ACAB37F1C781B /* AMZAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4150B6EDE122762C95950F13DCA551D7 /* AMZAlertController.swift */; };
 		AFF2F02F197E0AE5AEC8BA9E024E6B37 /* UIScreen+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 361CE8E44240A2F47E24ACEAF323CEB1 /* UIScreen+Extensions.swift */; };
 		B020D47C58E4AF6D6DDDF5CE5B8FC07B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAE83EF593605EE7258C459492B616FE /* Foundation.framework */; };
 		B2486BF479297E5311BA3C99BE50A7B9 /* LocationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557EF6A157B3B21AF5486653DF2C173F /* LocationTableViewCell.swift */; };
@@ -100,11 +100,14 @@
 
 /* Begin PBXFileReference section */
 		003FD2039B1E3CC867F0FDA08BD16838 /* AppmazoFoundation.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AppmazoFoundation.xcconfig; sourceTree = "<group>"; };
-		042543ABACA5C48D6AF4CBFC66D785B2 /* Pods_AMZAlertController_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_AMZAlertController_Example.framework; path = "Pods-AMZAlertController_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		042543ABACA5C48D6AF4CBFC66D785B2 /* Pods_AMZAlertController_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AMZAlertController_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		05676591B8E646024F3536C4C3DE9EB8 /* SubtitleTableViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SubtitleTableViewCell.swift; path = AppmazoUIKit/Classes/Cells/Table/SubtitleTableViewCell.swift; sourceTree = "<group>"; };
 		0F50AB8CA41B0BBE79F84F48A790FFC1 /* UITabBarController+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UITabBarController+Extensions.swift"; path = "AppmazoFoundation/Classes/Extensions/UITabBarController+Extensions.swift"; sourceTree = "<group>"; };
 		126FF8702C3224A18D1D1D92A19A1CC1 /* QuantityFormFieldTableViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = QuantityFormFieldTableViewCell.swift; path = "AppmazoUIKit/Classes/Cells/Table/Form Fields/QuantityFormFieldTableViewCell.swift"; sourceTree = "<group>"; };
 		18ADEAAB310E7D6BBD71B39F7D1A8B1F /* AppmazoUIKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = AppmazoUIKit.modulemap; sourceTree = "<group>"; };
+		1AE21F83210C1BB40055F435 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		1AE21F85210C1BB50055F435 /* AMZAlertController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AMZAlertController.swift; sourceTree = "<group>"; };
+		1AE21F87210C1BB50055F435 /* AMZAlertAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AMZAlertAction.swift; sourceTree = "<group>"; };
 		1BECC43ACE7E09C248D9E8ADD1392DA5 /* AppmazoFoundation-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AppmazoFoundation-umbrella.h"; sourceTree = "<group>"; };
 		1FFD3497AB640C796CB9469143568FB4 /* AppmazoFoundation-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AppmazoFoundation-prefix.pch"; sourceTree = "<group>"; };
 		231D271DBABD21855B9911A41BB9419F /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIViewController+Extensions.swift"; path = "AppmazoFoundation/Classes/Extensions/UIViewController+Extensions.swift"; sourceTree = "<group>"; };
@@ -115,13 +118,12 @@
 		361CE8E44240A2F47E24ACEAF323CEB1 /* UIScreen+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIScreen+Extensions.swift"; path = "AppmazoFoundation/Classes/Extensions/UIScreen+Extensions.swift"; sourceTree = "<group>"; };
 		37B167D676E23035E14438CF12443096 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4003ECB9895D57D1637C06706390EB23 /* UINavigationController+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UINavigationController+Extensions.swift"; path = "AppmazoFoundation/Classes/Extensions/UINavigationController+Extensions.swift"; sourceTree = "<group>"; };
-		4150B6EDE122762C95950F13DCA551D7 /* AMZAlertController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AMZAlertController.swift; path = AMZAlertController/Classes/AMZAlertController.swift; sourceTree = "<group>"; };
-		41EE59DC6240F7D8E20C29766C46F192 /* AMZAlertController.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = AMZAlertController.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		41EE59DC6240F7D8E20C29766C46F192 /* AMZAlertController.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = AMZAlertController.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		44C8EFED81761FE990188770B764EE58 /* Pods-AMZAlertController_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AMZAlertController_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		44CE60B13E1FA00C949DFB6BD5A0399E /* Bundle+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Bundle+Extensions.swift"; path = "AppmazoFoundation/Classes/Extensions/Bundle+Extensions.swift"; sourceTree = "<group>"; };
 		4D1F38997AE81F63AF6C19C1EA79647D /* Application+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Application+Extensions.swift"; path = "AppmazoFoundation/Classes/Extensions/Application+Extensions.swift"; sourceTree = "<group>"; };
 		557EF6A157B3B21AF5486653DF2C173F /* LocationTableViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LocationTableViewCell.swift; path = AppmazoUIKit/Classes/Cells/Table/LocationTableViewCell.swift; sourceTree = "<group>"; };
-		5DDE1F6C9410D7259DDB2414A43673B3 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		5DDE1F6C9410D7259DDB2414A43673B3 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		604250B722046B09901313D6D4BDD213 /* Pods-AMZAlertController_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AMZAlertController_Example-resources.sh"; sourceTree = "<group>"; };
 		60C4EDB24373EFB6A09CEC68885EF787 /* AMZAlertController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = AMZAlertController.modulemap; sourceTree = "<group>"; };
 		66109C5D49430CAD290378CC873F3508 /* TextFormFieldTableViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TextFormFieldTableViewCell.swift; path = "AppmazoUIKit/Classes/Cells/Table/Form Fields/TextFormFieldTableViewCell.swift"; sourceTree = "<group>"; };
@@ -131,19 +133,19 @@
 		77CAA96417E232CF2E02DB85788A232E /* DateFormFieldTableViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DateFormFieldTableViewCell.swift; path = "AppmazoUIKit/Classes/Cells/Table/Form Fields/DateFormFieldTableViewCell.swift"; sourceTree = "<group>"; };
 		7B325DD2D2B340714A46315B3306CD33 /* Storyboardable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Storyboardable.swift; path = AppmazoFoundation/Classes/Protocols/Storyboardable.swift; sourceTree = "<group>"; };
 		807E665EEA1DD473F876BA2DE6A1ADBC /* FormFieldTableViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FormFieldTableViewCell.swift; path = "AppmazoUIKit/Classes/Cells/Table/Form Fields/FormFieldTableViewCell.swift"; sourceTree = "<group>"; };
-		853CB7449A55406064580EC242EA930B /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		853CB7449A55406064580EC242EA930B /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		85BFDDEF0323E7567BC3AD76672F5A27 /* Pods-AMZAlertController_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AMZAlertController_Example-dummy.m"; sourceTree = "<group>"; };
 		85CD70BC9970E0D146F1EFADEAE75EB1 /* ReuseIdentifiable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReuseIdentifiable.swift; path = AppmazoFoundation/Classes/Protocols/ReuseIdentifiable.swift; sourceTree = "<group>"; };
 		886CE018BA0D111DFF0360113460C624 /* Pods-AMZAlertController_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AMZAlertController_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		8B4A40F40B2699FC3176658816EF07D7 /* URL+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "URL+Extensions.swift"; path = "AppmazoFoundation/Classes/Extensions/URL+Extensions.swift"; sourceTree = "<group>"; };
-		913ACD97DB57DDB0BD1B618445B7AA14 /* AppmazoUIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AppmazoUIKit.framework; path = AppmazoUIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		913ACD97DB57DDB0BD1B618445B7AA14 /* AppmazoUIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AppmazoUIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		92E5423D9E32D121473A57C7103049DA /* AppmazoFoundation.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = AppmazoFoundation.modulemap; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		94C9B422108EF9BD6E9BF5F5498DF20E /* UIScrollView+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIScrollView+Extensions.swift"; path = "AppmazoFoundation/Classes/Extensions/UIScrollView+Extensions.swift"; sourceTree = "<group>"; };
 		975D929C6BE684841A13DEF0626BEBC4 /* Button.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Button.swift; path = AppmazoUIKit/Classes/Elements/Button.swift; sourceTree = "<group>"; };
 		A0098625826AC5555A8D9FF4F39210D1 /* AppmazoUIKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AppmazoUIKit-prefix.pch"; sourceTree = "<group>"; };
 		A480120DF73B74BFAA192C01B1B1E248 /* AMZAlertController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AMZAlertController-dummy.m"; sourceTree = "<group>"; };
-		AA38C8E217697BB1B9DFC4ECCBAE4632 /* AMZAlertController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AMZAlertController.framework; path = AMZAlertController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA38C8E217697BB1B9DFC4ECCBAE4632 /* AMZAlertController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AMZAlertController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF6A9AD851377EECE9BF771D778D32EF /* AppmazoUIKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AppmazoUIKit-umbrella.h"; sourceTree = "<group>"; };
 		AFF8D740E475973A34FA789BAB2ED9FA /* DatePickerTableViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DatePickerTableViewCell.swift; path = AppmazoUIKit/Classes/Cells/Table/DatePickerTableViewCell.swift; sourceTree = "<group>"; };
 		B891BA4117E21AEFCAAA7D5CDDCE94E1 /* AMZAlertController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AMZAlertController-prefix.pch"; sourceTree = "<group>"; };
@@ -155,9 +157,8 @@
 		C300048A7E9B6EE5C6468A4F23862DDE /* Date+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Date+Extensions.swift"; path = "AppmazoFoundation/Classes/Extensions/Date+Extensions.swift"; sourceTree = "<group>"; };
 		C45AA3EB90B7637E719F342A58876872 /* AppmazoFoundation-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AppmazoFoundation-dummy.m"; sourceTree = "<group>"; };
 		C615460E359C291FBA76F93D2566B286 /* Pods-AMZAlertController_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AMZAlertController_Example-frameworks.sh"; sourceTree = "<group>"; };
-		C62A21CDB628A01749C431DF4560517C /* AMZAlertAction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AMZAlertAction.swift; path = AMZAlertController/Classes/AMZAlertAction.swift; sourceTree = "<group>"; };
 		C71ECED36E187C4276383F7513D1BD0F /* Pods-AMZAlertController_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-AMZAlertController_Example.modulemap"; sourceTree = "<group>"; };
-		CC62BAA0981FC8B4265A0FCD6B2621CB /* AppmazoFoundation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AppmazoFoundation.framework; path = AppmazoFoundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC62BAA0981FC8B4265A0FCD6B2621CB /* AppmazoFoundation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AppmazoFoundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4A15EDFA021157E19310C8CEE76B49F /* AMZAlertController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AMZAlertController-umbrella.h"; sourceTree = "<group>"; };
 		DC196117EB4401AB161983569334DB7D /* Assets.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = AppmazoUIKit/Assets/Assets.xcassets; sourceTree = "<group>"; };
 		E25795BFD3D1FD2C7FD944055D64302C /* PermissionPromptTableViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PermissionPromptTableViewCell.swift; path = AppmazoUIKit/Classes/Cells/Table/PermissionPromptTableViewCell.swift; sourceTree = "<group>"; };
@@ -208,6 +209,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1AE21F82210C1BB40055F435 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				1AE21F83210C1BB40055F435 /* .gitkeep */,
+			);
+			name = Assets;
+			path = AMZAlertController/Assets;
+			sourceTree = "<group>";
+		};
+		1AE21F84210C1BB50055F435 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				1AE21F85210C1BB50055F435 /* AMZAlertController.swift */,
+				1AE21F87210C1BB50055F435 /* AMZAlertAction.swift */,
+			);
+			name = Classes;
+			path = AMZAlertController/Classes;
+			sourceTree = "<group>";
+		};
 		1D9578D2311647C6A8C3D398D7C9CBF5 /* Pods-AMZAlertController_Example */ = {
 			isa = PBXGroup;
 			children = (
@@ -257,7 +277,6 @@
 				61B7849C2814EC1B475F3350D2A7D13D /* Resources */,
 				39FFDA859E17634D5767E2A561C30E36 /* Support Files */,
 			);
-			name = AppmazoUIKit;
 			path = AppmazoUIKit;
 			sourceTree = "<group>";
 		};
@@ -283,8 +302,8 @@
 		5FF18B61AE714E04FC2755781C78E267 /* AMZAlertController */ = {
 			isa = PBXGroup;
 			children = (
-				C62A21CDB628A01749C431DF4560517C /* AMZAlertAction.swift */,
-				4150B6EDE122762C95950F13DCA551D7 /* AMZAlertController.swift */,
+				1AE21F82210C1BB40055F435 /* Assets */,
+				1AE21F84210C1BB50055F435 /* Classes */,
 				823969804C0624EB5B10FA56C56DBA0E /* Pod */,
 				BF8B11E3C44D09C9AA863909FC15D3E4 /* Support Files */,
 			);
@@ -312,7 +331,6 @@
 				8B4A40F40B2699FC3176658816EF07D7 /* URL+Extensions.swift */,
 				F45BB97F379415B28FC1F6FDC4FB71E0 /* Support Files */,
 			);
-			name = AppmazoFoundation;
 			path = AppmazoFoundation;
 			sourceTree = "<group>";
 		};
@@ -609,9 +627,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				652A53B7E98359A2164B0E63D426C04B /* AMZAlertAction.swift in Sources */,
 				5FA02E334596EC789E19C5C44CF3DE7D /* AMZAlertController-dummy.m in Sources */,
-				AD1EA455ACA9F5EFD60ACAB37F1C781B /* AMZAlertController.swift in Sources */,
+				1AE21F88210C1BB50055F435 /* AMZAlertController.swift in Sources */,
+				1AE21F89210C1BB50055F435 /* AMZAlertAction.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
